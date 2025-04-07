@@ -20,13 +20,13 @@ for (int a = 0; a < 10; a++)//for criando a variavel (a) recendo 0,tendo com ope
     printf("\n");//printf so pra pular uma linha deixando mais organizado no terminal.
 
 for (int i = 0; i < 10; i++)//for criando a variavel (i) recendo 0,tendo com operador relacional (i) sendo menor que 10 e verdadeiro,e incrementando(++) a variavel.
-{
-    printf("%d ", i + 1);//pra imprimir uma coluna de 0 ate 9 no terminal.
+{//1
+    printf("%d ", i + 1);//pra imprimir uma coluna de 1 ate 10 no terminal.
 
 for (int j = 0; j < 10; j++)//for criando a variavel (j) recendo 0,tendo com operador relacional (j) sendo menor que 10 e verdadeiro,e incrementando(++) a variavel.
 {
     matriz[i][j] = soma;//matriz com os indices [i] e [j] pra cria a matriz como um plano carteziano, tendo o valor nas coordenadas igual a soma(que é 0).
-    
+
     for (int i = 0; i < 1; i++)//a variavel recebe 0, tendo um limite de uma linha de execuçao por causa da (i < 1),e incrementa(++) pra finalizar a execução
     {
      for (int j = 0; j < 3; j++)//a variavel recebe 0,que vai ate 3 colunas,por causa do (j < 3);incrementa(++) pra finaizar
@@ -44,6 +44,30 @@ for (int j = 0; j < 10; j++)//for criando a variavel (j) recendo 0,tendo com ope
      }
     
     }
+    
+ for (int i = 0; i < 5 ; i++)//criei a variavel recebendo 0,que quando i for menor que 5 executar,e incrementa pra ter finalização esse loop.
+ {
+    if (i == j)//serve pra que somente a diagonal prinaria da matriz,venha ser trabalhada.
+    {
+        for (int j = 2; j < 5 ; j++)//a variavel recebendo 2 pra pular 2 linhas na matriz,que quando j for menor que 5 venha executar,e incrementa(++) pra finalizar o loop.
+  {
+    matriz[i][j] = 3;//vai substituir o valor 0 na matriz por 3,nas areas onde sera executada no codego acima
+  }
+    }
+
+for (int i = 4; i < 7; i++)//criei a variavel (i) recebendo 4,tendo a aporeção relacional que,quando i for menor que 7 vai ser verdadeir,e depos incrementa(++),tudo para limitar o alcance da execução
+{
+    if (i + j == 9)//Serve pra que somente a diagonal segundaria da matriz,vanha ser trabalhada
+    {
+    for (int j = 0; j < 10; j++)//ela so ta aqui pra cria um outro loop pra substituir o valor na area que vai ser executada dentro da matriz.
+    {
+        matriz[i][j] = 3;//Esse é o valor que vai substituir na matriz,que foi reduzida pelo primeiro for.
+    }
+    
+    }
+}
+ }//1
+ 
     printf("%d ", matriz[i][j]);//printf pra imprimir toda a matriz no terminal.
     
 }
