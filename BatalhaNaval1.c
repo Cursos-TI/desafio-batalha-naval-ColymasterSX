@@ -19,6 +19,7 @@ for (int a = 0; a < 10; a++)//for criando a variavel (a) recendo 0,tendo com ope
 }
     printf("\n");//printf so pra pular uma linha deixando mais organizado no terminal.
 
+    
 for (int i = 0; i < 10; i++)//for criando a variavel (i) recendo 0,tendo com operador relacional (i) sendo menor que 10 e verdadeiro,e incrementando(++) a variavel.
 {
     printf("%d ", i + 1);//pra imprimir uma coluna de 0 ate 9 no terminal.
